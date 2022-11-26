@@ -4,6 +4,7 @@ import React from "react";
 // How am I the same as InventoryTile? How am I different?
 
 function ShopTile({ potion, addToInventory, children }) {
+  console.log(children);
   return (
     <div className="card">
       <div onClick={() => addToInventory(potion.id)} className="image-wrapper">
